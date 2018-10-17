@@ -3,15 +3,19 @@ document.getElementById("myForm").addEventListener("submit", saveBookmark);
 
 /// SAVE BOOKMARK
 function saveBookmark(e) {
-  var siteName = document.getElementById("siteName").value;
+  var companyName = document.getElementById("companyName").value;
   var siteUrl = document.getElementById("siteUrl").value;
+  var cityName = document.getElementById("cityName").value;
+  var transitType = document.getElementById("transitType").value;
 
-  if (!validateForm(siteName, siteUrl)) {
+  if (!validateForm(companyName, siteUrl, cityName, transitType)) {
     return false;
   }
   var bookmark = {
-    name: siteName,
-    url: siteUrl
+    name: companyName,
+    url: siteUrl,
+    city: cityName,
+    transit: transitType
   };
 
   // TEST if bookmarks is null
