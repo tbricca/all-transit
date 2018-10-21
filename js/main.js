@@ -1,3 +1,4 @@
+/// SAVE BOOKMARK --------------------------------------------------
 // Listen for form submit formid "myform"
 document.getElementById("myForm").addEventListener("submit", saveBookmark);
 
@@ -105,3 +106,8 @@ function validateForm(siteName, siteUrl) {
 
   return true;
 }
+/// END OF SAVING BOOKMARK ---------------------------------------------
+
+// QUERY / FILTER FOR TRANSIT COMPANY ------------------------------
+// Get input element
+let filterInput = document.getElementById("filterInput");
